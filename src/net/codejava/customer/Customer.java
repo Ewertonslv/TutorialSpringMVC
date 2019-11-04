@@ -1,3 +1,4 @@
+  
 package net.codejava.customer;
  
 import javax.persistence.Entity;
@@ -15,18 +16,9 @@ public class Customer {
  
     private String name;
     private String email;
-    private String address;
- 
-    protected Customer() {
-    }
- 
-    protected Customer(String name, String email, String address) {
-        this.name = name;
-        this.email = email;
-        this.address = address;
-    }
-
-	public Long getId() {
+    
+	
+    public Long getId() {
 		return id;
 	}
 
@@ -57,7 +49,19 @@ public class Customer {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
+	private String address;
  
+    protected Customer() {
+    }
+ 
+    protected Customer(String name, String email, String address) {
+        this.name = name;
+        this.email = email;
+        this.address = address;
+    }
+ 
+
     // getters and setters are not shown for brevity
  
 }

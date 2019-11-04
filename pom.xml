@@ -61,6 +61,11 @@
 </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
+     <resources>
+            <resource>
+                <directory>${project.basedir}/src</directory>
+            </resource>
+    </resources>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
